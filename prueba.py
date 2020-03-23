@@ -1,12 +1,26 @@
 import RPI.GPIO as GPIO
-import time
+from time import sleep 
 
 GPIO.setmode(GPIO.BOARD)
 #GPIO.setwarnings(False)
 
-ledPin = 12
+rojo = 12
+naranja = 37
+verde = 36
+amarillo = 38
+azul = 35
 
-GPIO.setup(ledPin, GPIO.OUT)
-GPIO.output(ledPin, True)
-sleep(15)
-GPIO.output(ledPin,False)
+GPIO.setup(rojo, GPIO.OUT)
+GPIO.output(rojo, True)
+GPIO.output(naranja, True)
+GPIO.output(verde, True)
+GPIO.output(amarillo, True)
+
+sleep(1)
+GPIO.output(rojo,False)
+GPIO.output(rojo, False)
+GPIO.output(naranja, False)
+GPIO.output(verde, False)
+GPIO.output(amarillo, False)
+
+
